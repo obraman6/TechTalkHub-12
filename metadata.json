@@ -1,0 +1,8 @@
+{
+  "name": "TechTalkHub",
+  "description": "TechTalkHub — Technology • Skills • Innovation. Professional online technology learning, skills assessment, and QR-verified certification platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

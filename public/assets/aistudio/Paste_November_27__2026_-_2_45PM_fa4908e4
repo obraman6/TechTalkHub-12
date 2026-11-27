@@ -1,0 +1,1920 @@
+# TECHTALKHUB — PROFESSIONAL ONLINE LEARNING & CERTIFICATION PLATFORM
+
+## ROLE
+
+You are a senior full-stack software architect, UI/UX designer, database engineer, security engineer, and education-platform developer.
+
+Build a complete, production-ready web-based learning and certification platform called:
+
+# TECHTALKHUB
+
+Tagline:
+
+**Technology • Skills • Innovation**
+
+The platform must allow students to register, create profiles, browse computer and technology courses, enroll in courses, study lessons, complete assessments, receive certificates after successful completion, and allow employers or any third party to verify certificates online using a QR code or Certificate ID.
+
+This must be a REAL working system, not a static mockup or fake prototype.
+
+---
+
+# 1. CORE OBJECTIVE
+
+Build TechTalkHub as an online technology education and certification platform.
+
+The complete flow should be:
+
+Student Registration
+→ Student Profile
+→ Browse Courses
+→ Enroll
+→ Study Lessons
+→ Complete Assessment
+→ Pass Required Score
+→ Certificate Automatically Generated
+→ Unique Certificate ID Generated
+→ QR Code Generated
+→ Certificate PDF Generated
+→ Certificate Stored in Database
+→ Public Verification Page
+→ Verified Student Profile
+
+A person who receives a TechTalkHub certificate must be able to prove that the certificate is genuine.
+
+A person who scans the QR code must be taken directly to the official TechTalkHub verification page.
+
+---
+
+# 2. IMPORTANT DATA RULE
+
+DO NOT create fake educational records and present them as real.
+
+Do not randomly invent students, certificates, examination results, instructors, statistics, or verification records.
+
+Use real database records created through the application.
+
+For initial demonstration, use clearly marked sample/demo records only and make it possible for the administrator to delete them.
+
+All production statistics must be calculated from actual database records.
+
+Examples:
+
+Students = actual registered students
+
+Certificates = actual issued certificates
+
+Courses = actual courses created by administrators
+
+Verification count = actual verification requests
+
+---
+
+# 3. TECHNOLOGY REQUIREMENTS
+
+Use a modern production-ready architecture.
+
+The application must be:
+
+- Responsive
+- Mobile friendly
+- Tablet friendly
+- Desktop friendly
+- Fast
+- Secure
+- Accessible
+- SEO friendly where appropriate
+- Professional
+- Easy to maintain
+- Scalable
+
+Use a proper backend and database.
+
+Do not store important production data only in browser localStorage.
+
+Authentication, users, courses, lessons, exams, results, certificates, verification records, and profiles must use persistent database storage.
+
+Use secure authentication.
+
+Passwords must NEVER be stored as plain text.
+
+---
+
+# 4. USER TYPES
+
+Create at least these roles:
+
+## STUDENT
+
+Students can:
+
+- Register
+- Login
+- Sign out
+- Reset password
+- Verify email
+- Create profile
+- Upload profile photo
+- Browse courses
+- Search courses
+- Filter courses
+- Enroll
+- Study lessons
+- Track progress
+- Take assessments
+- View results
+- View certificates
+- Download certificates
+- Share certificate verification link
+- View certificate status
+- View their public certification profile
+
+## ADMIN
+
+Administrators can:
+
+- Login securely
+- Manage students
+- Manage instructors
+- Create courses
+- Edit courses
+- Delete courses
+- Create categories
+- Create modules
+- Create lessons
+- Create assessments
+- Create questions
+- Set pass marks
+- Review student results
+- Issue certificates
+- Revoke certificates
+- Manage certificate templates
+- View verification activity
+- View reports
+- Manage platform settings
+
+## INSTRUCTOR
+
+Instructors can:
+
+- Manage assigned courses
+- Create/edit lessons
+- Create assessments
+- Review student progress
+- View course statistics
+
+Administrators must control instructor permissions.
+
+---
+
+# 5. COURSE CATEGORIES
+
+Create professional course categories.
+
+## COMPUTER FUNDAMENTALS
+
+Courses:
+
+- Computer Fundamentals
+- Introduction to Information Technology
+- Windows Operating System Essentials
+- Internet and Email Essentials
+- Digital Productivity
+- Typing and Computer Skills
+
+## MICROSOFT OFFICE
+
+Courses:
+
+- Microsoft Word Essentials
+- Microsoft Word Advanced
+- Microsoft Excel Essentials
+- Microsoft Excel Advanced
+- Microsoft PowerPoint
+- Microsoft Access Fundamentals
+- Microsoft Office Professional
+
+## WEB DEVELOPMENT
+
+Courses:
+
+- HTML and Web Structure
+- CSS Web Design
+- JavaScript Fundamentals
+- Responsive Web Design
+- PHP and MySQL Fundamentals
+- Full-Stack Web Development Fundamentals
+
+## GRAPHIC DESIGN
+
+Courses:
+
+- Graphic Design Fundamentals
+- Adobe Photoshop Essentials
+- Adobe Illustrator Essentials
+- Canva Design Essentials
+- Digital Poster Design
+- Social Media Content Design
+
+## IT SUPPORT & COMPUTER TECHNICIAN
+
+Courses:
+
+- Computer Hardware Fundamentals
+- Computer Maintenance and Troubleshooting
+- Windows Installation and Configuration
+- Software Installation and Troubleshooting
+- IT Support Fundamentals
+- Computer Networking Fundamentals
+- Computer Technician Essentials
+
+## CYBERSECURITY
+
+Courses:
+
+- Cybersecurity Fundamentals
+- Internet Safety and Digital Security
+- Password and Account Security
+- Network Security Fundamentals
+- Ethical Hacking Fundamentals
+- Cybersecurity Essentials
+
+## DATA & DATABASE
+
+Courses:
+
+- Data Analysis Fundamentals
+- Excel for Data Analysis
+- Database Fundamentals
+- SQL Fundamentals
+- Digital Business Skills
+
+## PROGRAMMING & APP DEVELOPMENT
+
+Courses:
+
+- Programming Fundamentals
+- Python Fundamentals
+- Java Fundamentals
+- Android Development Fundamentals
+- Flutter App Development
+- Mobile App Development Essentials
+
+Administrators must be able to add new categories and courses later.
+
+---
+
+# 6. COURSE LEVEL SYSTEM
+
+Every course should have a level.
+
+Use:
+
+### LEVEL 1 — FOUNDATION
+
+For beginners.
+
+### LEVEL 2 — INTERMEDIATE
+
+For learners with basic knowledge.
+
+### LEVEL 3 — ADVANCED
+
+For advanced learners.
+
+### PROFESSIONAL
+
+For professional certification programs.
+
+The level must appear on the course page and certificate where applicable.
+
+---
+
+# 7. COURSE STRUCTURE
+
+Every course must support:
+
+Course title
+Course code
+Category
+Level
+Description
+Learning objectives
+Instructor
+Duration
+Number of modules
+Number of lessons
+Assessment
+Pass mark
+Certificate eligibility
+Course thumbnail
+Status
+Created date
+Updated date
+
+Example:
+
+Computer Fundamentals
+
+Level:
+Foundation — Level 1
+
+Duration:
+40 Learning Hours
+
+Modules:
+
+Module 1 — Introduction to Computers
+
+Module 2 — Computer Hardware
+
+Module 3 — Software and Operating Systems
+
+Module 4 — Internet and Email
+
+Module 5 — Computer Security
+
+Final Assessment:
+
+40 Questions
+
+Pass Mark:
+
+70%
+
+Certificate:
+
+Certificate of Completion
+
+---
+
+# 8. LESSON SYSTEM
+
+Each course must contain modules.
+
+Each module contains lessons.
+
+Lessons should support:
+
+- Text
+- Images
+- Video links
+- Embedded educational videos where supported
+- Downloadable learning materials
+- Notes
+- Lesson completion tracking
+
+Student progress should automatically update.
+
+Example:
+
+Computer Fundamentals
+Progress: 65%
+
+Module 1 ✓
+Module 2 ✓
+Module 3 ✓
+Module 4 60%
+Module 5 🔒
+
+---
+
+# 9. ASSESSMENT SYSTEM
+
+Create a proper examination system.
+
+Support:
+
+- Multiple choice questions
+- Multiple answers where required
+- True/False
+- Question explanations
+- Randomized question order
+- Randomized answer order
+- Time limit
+- Maximum attempts
+- Automatic grading
+- Pass mark
+- Score percentage
+- Pass/fail status
+
+Example:
+
+Questions:
+40
+
+Pass Mark:
+70%
+
+Student Score:
+85%
+
+Result:
+PASSED
+
+If the student fails, do not generate a certificate.
+
+Only students who satisfy the certificate eligibility requirements can receive certificates.
+
+---
+
+# 10. STUDENT PROFILE
+
+Create a professional student profile.
+
+Fields:
+
+- Profile photo
+- Full name
+- Username
+- Email
+- Phone
+- Country
+- City
+- Short biography
+- Skills
+- Certificates
+- Completed courses
+- Learning progress
+- Registration date
+
+Allow the student to upload/change their profile photo.
+
+The profile photo must be securely stored.
+
+---
+
+# 11. PUBLIC STUDENT PROFILE
+
+Create an optional public certification profile.
+
+Example URL:
+
+/profile/student-username
+
+The public profile should show:
+
+TechTalkHub branding
+
+Profile photo
+
+Student full name
+
+Professional title/status
+
+Short biography
+
+Skills
+
+Completed courses
+
+Verified certificates
+
+Certificate IDs
+
+Certificate issue dates
+
+Certificate status
+
+Do not expose sensitive/private information.
+
+Email and phone should NOT be publicly displayed unless the student explicitly enables public visibility.
+
+---
+
+# 12. CERTIFICATE SYSTEM
+
+This is one of the MOST IMPORTANT features.
+
+Create a professional certificate generator.
+
+Every certificate must contain:
+
+TECHTALKHUB logo
+
+TECHTALKHUB name
+
+Tagline:
+
+Technology • Skills • Innovation
+
+Certificate title
+
+Student photograph
+
+Student full name
+
+Course name
+
+Course level
+
+Certificate type
+
+Course duration
+
+Date issued
+
+Certificate ID
+
+QR Code
+
+Instructor/Director signature
+
+Verification statement
+
+Verification URL
+
+---
+
+# 13. STUDENT PHOTO ON CERTIFICATE
+
+IMPORTANT:
+
+Every generated certificate should have an elegant area for the student's photograph.
+
+The student's profile photo should automatically be retrieved from the student's account/profile.
+
+The certificate design should place the photo professionally.
+
+Possible layout:
+
+LEFT SIDE:
+
+Student Photo
+
+RIGHT SIDE:
+
+Certificate text
+
+OR
+
+Top-right:
+
+Circular/rounded student portrait
+
+The image should:
+
+- Maintain aspect ratio
+- Not be stretched
+- Be cropped professionally
+- Have a clean border
+- Have a professional size
+- Look good when printed
+- Look good in PDF
+- Look good digitally
+
+If the student has no profile photo, do NOT generate a fake person image.
+
+Instead display a clear placeholder or require the student to upload a photo before certificate generation.
+
+---
+
+# 14. CERTIFICATE DESIGN
+
+Design certificates to look professional enough for printing and digital sharing.
+
+Use:
+
+- Clean typography
+- Professional spacing
+- TechTalkHub branding
+- Elegant borders
+- Certificate ID
+- QR code
+- Student photograph
+- Signature areas
+- Verification information
+
+Avoid childish templates.
+
+Create at least three certificate templates:
+
+## TEMPLATE 1 — STANDARD
+
+For normal course completion.
+
+## TEMPLATE 2 — PROFESSIONAL
+
+For advanced courses.
+
+## TEMPLATE 3 — PROFESSIONAL PROGRAM
+
+For multi-course certification programs.
+
+Allow administrators to select the certificate template.
+
+---
+
+# 15. CERTIFICATE TYPES
+
+Support:
+
+### Certificate of Completion
+
+For successfully completing a course.
+
+### Certificate of Achievement
+
+For successfully completing an assessment with the required score.
+
+### Professional Certificate
+
+For completing a professional certification program.
+
+The certificate type must be stored in the database.
+
+---
+
+# 16. UNIQUE CERTIFICATE ID
+
+Every certificate MUST have a unique certificate ID.
+
+Example:
+
+TTH-CF-2026-000184
+
+or a secure unique format such as:
+
+TTH-2026-8F4K29X7
+
+Never reuse a Certificate ID.
+
+The Certificate ID must be searchable in the verification system.
+
+---
+
+# 17. QR CODE VERIFICATION
+
+Every certificate must have a unique QR code.
+
+The QR code must point to the exact certificate verification page.
+
+Example:
+
+https://cert.techtalkhub.com/verify/TTH-CF-2026-000184
+
+When somebody scans the QR code, open:
+
+TechTalkHub Certificate Verification
+
+The page must display the actual certificate record.
+
+DO NOT send the QR code to the homepage.
+
+---
+
+# 18. CERTIFICATE VERIFICATION PAGE
+
+Create a public verification page.
+
+URL:
+
+/verify/:certificateId
+
+Example:
+
+/verify/TTH-CF-2026-000184
+
+Display:
+
+TECHTALKHUB
+
+✓ VERIFIED CERTIFICATE
+
+Certificate Status:
+VALID
+
+Certificate ID:
+TTH-CF-2026-000184
+
+Student:
+Ruben Rudovick Buberwa
+
+Student Photo:
+[PROFILE PHOTO]
+
+Course:
+Computer Fundamentals
+
+Level:
+Foundation — Level 1
+
+Certificate Type:
+Certificate of Completion
+
+Score:
+86%
+
+Course Duration:
+40 Learning Hours
+
+Date Issued:
+27 November 2026
+
+Issued By:
+TechTalkHub
+
+Verification:
+Authentic TechTalkHub certificate
+
+Provide buttons:
+
+[View Student Profile]
+
+[View Certificate]
+
+[Download Certificate PDF]
+
+---
+
+# 19. INVALID CERTIFICATE
+
+If somebody enters an invalid Certificate ID:
+
+Display:
+
+❌ CERTIFICATE NOT FOUND
+
+The certificate ID provided could not be verified in the TechTalkHub certification database.
+
+Do not display fake information.
+
+---
+
+# 20. REVOKED CERTIFICATE
+
+Administrators must be able to revoke certificates.
+
+If revoked, the verification page must display:
+
+⚠ CERTIFICATE REVOKED
+
+Certificate ID:
+TTH-XXXX
+
+Status:
+REVOKED
+
+Reason:
+[If administrator has provided a public reason]
+
+A revoked certificate must never display as VALID.
+
+---
+
+# 21. CERTIFICATE PDF
+
+Allow students and administrators to download certificates as PDF.
+
+The PDF should preserve:
+
+- Student photo
+- Certificate design
+- QR code
+- Certificate ID
+- Signatures
+- Verification URL
+- All certificate information
+
+Use high-quality print resolution.
+
+Certificate should be suitable for:
+
+A4 printing
+
+Digital sharing
+
+Email
+
+WhatsApp
+
+LinkedIn
+
+Professional portfolios
+
+---
+
+# 22. CERTIFICATE SHARING
+
+Add:
+
+Copy Verification Link
+
+Share Certificate
+
+Download PDF
+
+Open Verification Page
+
+Where browser/device support exists, use native sharing.
+
+The main shared link should always be the official verification URL.
+
+---
+
+# 23. ADMIN DASHBOARD
+
+Create a professional admin dashboard.
+
+Display REAL database statistics.
+
+Cards:
+
+Total Students
+
+Total Courses
+
+Active Courses
+
+Certificates Issued
+
+Certificates Verified
+
+Certificates Revoked
+
+Total Enrollments
+
+Completed Courses
+
+Charts:
+
+Student registrations
+
+Course enrollments
+
+Certificates issued
+
+Certificate verification activity
+
+Do not hardcode statistics.
+
+---
+
+# 24. ADMIN MENU
+
+Create:
+
+Dashboard
+
+Students
+
+Instructors
+
+Courses
+
+Categories
+
+Modules
+
+Lessons
+
+Assessments
+
+Questions
+
+Enrollments
+
+Results
+
+Certificates
+
+Certificate Templates
+
+Verification Logs
+
+Reports
+
+Settings
+
+---
+
+# 25. STUDENT DASHBOARD
+
+Create:
+
+Dashboard
+
+My Courses
+
+Browse Courses
+
+My Progress
+
+Assessments
+
+My Certificates
+
+My Profile
+
+Settings
+
+Logout
+
+Dashboard should show:
+
+Welcome message
+
+Current courses
+
+Progress
+
+Completed courses
+
+Certificates
+
+Recent activity
+
+---
+
+# 26. COURSE CATALOG
+
+Create a professional course marketplace/catalog interface.
+
+Each course card should display:
+
+Course thumbnail
+
+Course title
+
+Category
+
+Level
+
+Duration
+
+Number of lessons
+
+Instructor
+
+Rating if real ratings exist
+
+Enrollment count only if calculated from actual database records
+
+Course status
+
+[View Course]
+
+Do NOT invent ratings or enrollment numbers.
+
+---
+
+# 27. SEARCH AND FILTER
+
+Allow students to search courses by:
+
+Course name
+
+Category
+
+Level
+
+Instructor
+
+Skill
+
+Keyword
+
+Filters:
+
+Foundation
+
+Intermediate
+
+Advanced
+
+Professional
+
+---
+
+# 28. AUTHENTICATION
+
+Support:
+
+Email registration
+
+Email/password login
+
+Logout
+
+Forgot password
+
+Password reset
+
+Email verification
+
+Secure session handling
+
+Optional Google Sign-In if supported by the chosen authentication provider.
+
+Do not expose passwords.
+
+---
+
+# 29. SECURITY
+
+Implement:
+
+Authentication
+
+Role-based access control
+
+Admin route protection
+
+Input validation
+
+Secure file uploads
+
+Image type validation
+
+File size limits
+
+Database security rules
+
+Protection against unauthorized certificate creation
+
+Protection against unauthorized certificate modification
+
+Protection against ID manipulation
+
+Protection against unauthorized access to private student data
+
+Only authorized administrators can issue/revoke certificates.
+
+Students cannot manually create certificates.
+
+---
+
+# 30. DATABASE STRUCTURE
+
+Design a proper database.
+
+Minimum entities/tables:
+
+users
+
+student_profiles
+
+instructors
+
+categories
+
+courses
+
+course_modules
+
+lessons
+
+enrollments
+
+lesson_progress
+
+assessments
+
+questions
+
+assessment_attempts
+
+assessment_answers
+
+certificates
+
+certificate_templates
+
+verification_logs
+
+student_skills
+
+platform_settings
+
+Use relationships properly.
+
+Certificate records should contain at minimum:
+
+certificate_id
+
+student_id
+
+course_id
+
+certificate_type
+
+level
+
+score
+
+issue_date
+
+status
+
+verification_url
+
+qr_code_data
+
+template_id
+
+created_at
+
+updated_at
+
+revoked_at
+
+revocation_reason
+
+---
+
+# 31. VERIFICATION LOGS
+
+Every certificate verification request should optionally be logged.
+
+Store:
+
+Certificate ID
+
+Verification timestamp
+
+Verification result
+
+Non-sensitive technical information required for security/analytics
+
+Do not expose private logs publicly.
+
+Admin should be able to view verification activity.
+
+---
+
+# 32. ADMIN CERTIFICATE ISSUING
+
+Administrators should be able to:
+
+Search student
+
+Select course
+
+Review score
+
+Select certificate type
+
+Select template
+
+Generate certificate
+
+Preview certificate
+
+Issue certificate
+
+Revoke certificate
+
+Download certificate
+
+Copy verification URL
+
+The system should automatically generate:
+
+Certificate ID
+
+QR Code
+
+Verification URL
+
+Certificate record
+
+PDF
+
+---
+
+# 33. CERTIFICATE ELIGIBILITY
+
+A certificate should only be generated when requirements are satisfied.
+
+Example:
+
+Course completion:
+100%
+
+Assessment:
+PASSED
+
+Minimum score:
+70%
+
+Required lessons:
+Completed
+
+Then:
+
+Certificate Eligible ✓
+
+Otherwise:
+
+Certificate Not Eligible
+
+---
+
+# 34. UI/UX DESIGN
+
+Create a modern technology education visual identity.
+
+Design should feel:
+
+Professional
+
+Modern
+
+Trustworthy
+
+Clean
+
+Premium
+
+Educational
+
+Use responsive layouts.
+
+Desktop:
+
+Sidebar dashboard navigation.
+
+Mobile:
+
+Bottom navigation or mobile menu.
+
+Use cards, tables, badges, progress indicators, modal dialogs, confirmation dialogs, toast notifications, loading states, empty states, and error states.
+
+---
+
+# 35. RESPONSIVE DESIGN
+
+The certificate itself must also be responsive when previewed online.
+
+The generated PDF must maintain a professional fixed certificate layout.
+
+The website must work on:
+
+Mobile phones
+
+Tablets
+
+Laptops
+
+Desktop monitors
+
+---
+
+# 36. LANDING PAGE
+
+Create a professional TechTalkHub landing page.
+
+Sections:
+
+Hero
+
+Popular Courses
+
+Course Categories
+
+How It Works
+
+Why TechTalkHub
+
+Certification
+
+Certificate Verification
+
+Student Success
+
+Call to Action
+
+Footer
+
+Hero message:
+
+"Learn Technology. Build Skills. Get Certified."
+
+Buttons:
+
+[Explore Courses]
+
+[Verify Certificate]
+
+[Create Account]
+
+---
+
+# 37. CERTIFICATE VERIFICATION ON LANDING PAGE
+
+Add a prominent verification search box:
+
+"Verify a TechTalkHub Certificate"
+
+Input:
+
+Enter Certificate ID
+
+Button:
+
+[VERIFY CERTIFICATE]
+
+Example:
+
+TTH-CF-2026-000184
+
+After submission, redirect to the certificate verification page.
+
+---
+
+# 38. PUBLIC CERTIFICATE PROFILE
+
+The verification page should also provide a professional profile summary.
+
+Example:
+
+--------------------------------
+
+TECHTALKHUB
+
+VERIFIED CERTIFICATE
+
+[Student Photo]
+
+Ruben Rudovick Buberwa
+
+Certified TechTalkHub Learner
+
+Certificate:
+Computer Fundamentals
+
+Level:
+Foundation — Level 1
+
+Status:
+VALID
+
+Certificate ID:
+TTH-CF-2026-000184
+
+Issued:
+27 November 2026
+
+--------------------------------
+
+Verified Skills
+
+Computer Fundamentals
+
+Windows Basics
+
+Internet & Email
+
+Digital Security
+
+--------------------------------
+
+[View Public Profile]
+
+--------------------------------
+
+---
+
+# 39. ADMIN REPORTS
+
+Create reports for:
+
+Student registrations
+
+Course enrollments
+
+Course completion
+
+Assessment performance
+
+Certificates issued
+
+Certificates revoked
+
+Certificate verification activity
+
+Export where appropriate to:
+
+CSV
+
+PDF
+
+---
+
+# 40. EMPTY STATES
+
+Do not leave blank pages.
+
+Examples:
+
+No courses yet.
+
+"No courses have been published yet."
+
+No certificates:
+
+"You have not earned any certificates yet."
+
+No students:
+
+"No students registered yet."
+
+---
+
+# 41. ERROR HANDLING
+
+Never show raw technical errors to users.
+
+Instead use friendly messages.
+
+Example:
+
+"Something went wrong. Please try again."
+
+Log technical details securely for administrators/developers.
+
+---
+
+# 42. PHOTO UPLOAD SYSTEM
+
+Student profile photo upload must support:
+
+JPG
+
+JPEG
+
+PNG
+
+WebP
+
+Validate file type.
+
+Limit file size.
+
+Generate optimized versions if possible.
+
+Display image preview before upload.
+
+Allow changing/removing profile photo.
+
+Do not generate fake profile photos.
+
+---
+
+# 43. CERTIFICATE PHOTO REQUIREMENT
+
+Before generating a certificate, check:
+
+Does the student have a profile photo?
+
+If yes:
+Use it.
+
+If no:
+
+Display:
+
+"Please upload a profile photo before generating your certificate."
+
+Allow administrator override only if explicitly configured in settings.
+
+---
+
+# 44. CERTIFICATE AUTHENTICITY
+
+Make certificate authenticity easy to check.
+
+Every certificate must contain:
+
+Unique Certificate ID
+
+QR Code
+
+Official verification URL
+
+Student name
+
+Course
+
+Issue date
+
+Status
+
+The verification page must be the authoritative source.
+
+A downloaded PDF must not be treated as the authoritative source by itself.
+
+---
+
+# 45. SEO
+
+Create appropriate metadata for public pages.
+
+Public verification pages should have:
+
+Certificate title
+
+TechTalkHub branding
+
+Appropriate description
+
+Open Graph metadata where appropriate.
+
+Do not expose private student information in search engine metadata.
+
+---
+
+# 46. ACCESSIBILITY
+
+Use:
+
+Readable fonts
+
+Good contrast
+
+Keyboard navigation
+
+Accessible form labels
+
+Alt text
+
+Accessible buttons
+
+Clear validation messages
+
+---
+
+# 47. BRANDING
+
+Brand name:
+
+TECHTALKHUB
+
+Tagline:
+
+Technology • Skills • Innovation
+
+Primary visual identity should communicate:
+
+Technology
+
+Education
+
+Professional certification
+
+Trust
+
+Achievement
+
+Do not use childish graphics.
+
+Create a clean professional logo treatment if no logo asset is provided.
+
+---
+
+# 48. IMPORTANT: NO FAKE VERIFICATION
+
+This is critical.
+
+Never allow the verification page to say "VALID" merely because a Certificate ID looks correct.
+
+The certificate must exist in the database.
+
+Verification must check the actual certificate record.
+
+Pseudo-flow:
+
+User scans QR
+
+↓
+
+Extract Certificate ID
+
+↓
+
+Query database
+
+↓
+
+Certificate exists?
+
+NO → Certificate Not Found
+
+YES → Check status
+
+VALID → Display verified certificate
+
+REVOKED → Display revoked certificate
+
+---
+
+# 49. AUDITABILITY
+
+Important certificate events should be recorded:
+
+Certificate created
+
+Certificate issued
+
+Certificate downloaded
+
+Certificate verified
+
+Certificate revoked
+
+Certificate updated
+
+Record:
+
+Timestamp
+
+User/admin involved where appropriate
+
+Certificate ID
+
+Action
+
+---
+
+# 50. PERFORMANCE
+
+Optimize:
+
+Images
+
+Database queries
+
+Certificate generation
+
+QR generation
+
+PDF generation
+
+Course pages
+
+Dashboard queries
+
+Avoid unnecessary API requests.
+
+Use pagination for large student/course/certificate lists.
+
+---
+
+# 51. PRODUCTION QUALITY
+
+Do not build this as a simple front-end mockup.
+
+I need a functional application architecture with:
+
+Frontend
+
+Backend
+
+Database
+
+Authentication
+
+Storage
+
+Certificate generation
+
+QR generation
+
+Verification
+
+Role permissions
+
+Error handling
+
+Validation
+
+Responsive UI
+
+---
+
+# 52. ENVIRONMENT CONFIGURATION
+
+Keep sensitive credentials outside source code.
+
+Use environment variables.
+
+Create:
+
+.env.example
+
+Never expose:
+
+API keys
+
+Database passwords
+
+Private credentials
+
+Service account credentials
+
+Admin secrets
+
+---
+
+# 53. SEED DATA
+
+If demo data is necessary during development, clearly label it:
+
+DEMO DATA
+
+Do not mix demo certificates with production certificates.
+
+Provide a way for administrators to remove all demo data.
+
+---
+
+# 54. DEVELOPMENT APPROACH
+
+Build the system in phases.
+
+PHASE 1
+
+Project architecture
+
+Authentication
+
+Database
+
+User roles
+
+Student profiles
+
+Admin dashboard
+
+PHASE 2
+
+Course management
+
+Categories
+
+Modules
+
+Lessons
+
+Enrollment
+
+Progress tracking
+
+PHASE 3
+
+Assessment system
+
+Questions
+
+Attempts
+
+Automatic grading
+
+Pass/fail
+
+PHASE 4
+
+Certificate engine
+
+Certificate templates
+
+Student photo
+
+Certificate ID
+
+QR code
+
+PDF
+
+PHASE 5
+
+Verification system
+
+Public certificate verification
+
+Certificate profile
+
+Verification logs
+
+PHASE 6
+
+Reports
+
+Analytics
+
+Security hardening
+
+Performance optimization
+
+Responsive testing
+
+---
+
+# 55. IMPORTANT DEVELOPMENT RULE
+
+Do not skip important functionality just to make the first version look complete.
+
+If something requires a backend, database, authentication provider, storage service, PDF library, or QR library, implement the proper architecture.
+
+Do not simulate it using fake buttons.
+
+Every button should either:
+
+Perform its intended action
+
+OR
+
+Clearly display that the feature is not configured yet.
+
+---
+
+# 56. FINAL USER EXPERIENCE
+
+A student should experience this:
+
+1. Visit TechTalkHub
+2. Create account
+3. Verify email
+4. Complete profile
+5. Upload professional profile photo
+6. Browse courses
+7. Select course
+8. Enroll
+9. Study modules
+10. Complete lessons
+11. Take final assessment
+12. Pass required score
+13. Become certificate eligible
+14. Certificate is generated
+15. Student photo appears on certificate
+16. Unique Certificate ID is generated
+17. QR Code is generated
+18. PDF certificate is created
+19. Student downloads certificate
+20. Student shares verification link
+
+Employer/third party:
+
+1. Receives certificate
+2. Scans QR code
+3. Opens official TechTalkHub verification page
+4. Sees student photo
+5. Sees student name
+6. Sees course
+7. Sees level
+8. Sees certificate ID
+9. Sees issue date
+10. Sees certificate status
+11. Can view public student profile
+12. Can confirm certificate authenticity
+
+---
+
+# 57. FINAL DESIGN GOAL
+
+The final website must feel like a serious technology education and certification company.
+
+It should NOT look like:
+
+- A school assignment
+- A simple CRUD dashboard
+- A fake certificate generator
+- A static HTML demo
+- An AI-generated mockup
+
+It should look like:
+
+A professional online technology learning and certification platform.
+
+The most important trust feature is:
+
+**SCAN QR → VERIFY CERTIFICATE → VIEW AUTHENTIC STUDENT RECORD**
+
+Build the system around this principle.
+
+---
+
+# 58. BEFORE WRITING CODE
+
+First provide:
+
+1. Complete system architecture
+2. Recommended technology stack
+3. Database schema
+4. Folder/project structure
+5. Authentication architecture
+6. Certificate generation architecture
+7. QR verification architecture
+8. Security architecture
+9. Student workflow
+10. Admin workflow
+11. Instructor workflow
+
+Then begin implementation step by step.
+
+Do not remove the requirements above.
+
+If a technology choice is required, choose the most appropriate modern production-ready option and explain why.
+
+The final result must be scalable so TechTalkHub can later support thousands or millions of users and certificates.
+
+# END OF MASTER PROMPT
